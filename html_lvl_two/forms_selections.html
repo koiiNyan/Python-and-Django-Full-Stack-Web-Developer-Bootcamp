@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Hotel Feedback</title>
+  </head>
+  <body>
+    <h1>Hotel Feedback Form</h1>
+    <form>
+      <h3>Are you from Inside the US? Or Outside the US?</h3>
+
+      <!-- Radio inputs share the same name and are linked, so you can choose
+      only one option. If they were different names or didn't have names at all,
+      you could choose either options and couldn't unchoose them. -->
+      <label for="inus">Inside: </label>
+      <input id="inus" type="radio" name="loc" value="inside">
+
+      <label for="outus">Outside: </label>
+      <input id="outus" type="radio" name="loc" value="outside">
+
+
+      <h3>How was your service?</h3>
+      <select name="stars">
+        <option value="3">Great</option>
+        <option value="2">Okay</option>
+        <option value="1">Bad</option>
+      </select>
+
+      <h3>Any other feedback?</h3>
+      <textarea name="feedback" rows="8" cols="80"></textarea>
+      <br>
+      <input type="submit" name="" value="Submit">
+
+    </form>
+  </body>
+</html>

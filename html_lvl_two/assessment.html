@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Level Two Assessment</title>
+  </head>
+  <body>
+    <h1>Course Sign Up Page</h1>
+    <p>Please Note: First Name, Last Name, Password, and Email are required</p>
+
+    <form action="thnx.html">
+
+      <label for="fn">Fist Name: </label>
+      <input id="fn" type="text" name="fn" placeholder="First Name" required>
+
+      <label for="ln">Last Name: </label>
+      <input id="ln" type="text" name="ln" placeholder="Last Name" required>
+
+      <p></p>
+
+      <label for="email">Email: </label>
+      <input id="email" type="email" name="email" placeholder="Email" required>
+
+      <label for="pass">Password: </label>
+      <input id="pass" type="password" name="password" placeholder="Password" required>
+
+      <p>Are you over the age of 18?</p>
+
+      <label for="yes">Yes: </label>
+      <input id="yes" type="radio" name="age" value="y">
+
+      <label for="no">No: </label>
+      <input id="no" type="radio" name="age" value="n">
+
+      <p>Do you have a Credit Card or PayPal?</p>
+
+      <select name="cash">
+        <option value="cc">Credit Card</option>
+        <option value="pp">PayPal</option>
+      </select>
+
+      <p></p>
+      <!-- If there's a name in a submit, it will also have a value called in a URL and become a variable -->
+      <input type="submit" name="" value="Submit Feedback">
+
+    </form>
+  </body>
+</html>
