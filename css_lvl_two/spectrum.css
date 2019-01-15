@@ -1,0 +1,34 @@
+h1{
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+}
+
+.table{
+  margin: auto;
+}
+
+td{
+  height: 400px;
+  width: 200px;
+  border: 5px solid white;
+}
+
+#first{
+  background-color: #ff71ce;
+}
+
+#second{
+  background-color: #01cdfe;
+}
+
+#third{
+  background-color: #05ffa1;
+}
+
+#fourth{
+  background-color: #b967ff;
+}
+
+#fifth{
+  background-color: #fffb96;
+}
