@@ -19,9 +19,13 @@ h2{
   margin-bottom: 5%;
 }
 
+.sign_form{
+  font-size: 1.2em;
+}
+
 .inp{
   width: 300px;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin-bottom: 10px;
 }
 
