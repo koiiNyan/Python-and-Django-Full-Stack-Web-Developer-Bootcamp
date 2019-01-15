@@ -1,0 +1,36 @@
+.firstDiv{
+  color: blue;
+}
+
+.secondDiv{
+  color: red;
+}
+
+#singledout{
+  color: green;
+  text-decoration: underline;
+}
+
+/* * - the asterisk - selector for selecting every element of the page */
+/* It won't overwrite ids */
+/*
+*{
+  color:black;
+} */
+
+
+/* Select all ul elems that are placed immediately after h3 */
+h3 + ul{
+  border: 4px dotted purple;
+}
+
+/* All a inside of li */
+li a{
+  color: red;
+}
+
+/* Specific <a> inside of the list */
+li a[href="http://google.com"]{
+  color: green;
+  border: 2px solid orange;
+}

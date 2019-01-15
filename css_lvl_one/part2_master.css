@@ -1,0 +1,20 @@
+body{
+  background: url(https://images.wallpaperscraft.ru/image/hanyijie_nebo_dekoratsii_korabl_anime_art_104162_1920x1080.jpg);
+  background-repeat: no-repeat;
+}
+
+div{
+  background-color: blue;
+  border-color: red;
+  border-width: 2px;
+  border-style: dotted;
+}
+
+p{
+  color: yellow;
+}
+
+span{
+  background: red;
+  color: black;
+}

@@ -1,0 +1,29 @@
+/* Note: Usually you won't have a digit or a number
+inside the name of the HTML or css file.*/
+
+/* selected tag{
+  property: value;
+} */
+
+h1{
+  color: blue;
+}
+
+li{
+  color: rgb(255, 97, 0);
+}
+
+p{
+  color: #0895a8;
+}
+
+
+/* rgba - Alpha, A value is clarifying how dark or how transperent the color is.
+0 - fully transperent
+1 - fully opaque */
+h4{
+  color: rgba(255, 97, 0, 0.5);
+}
+
+/* Note:
+Hex colors - most common use */

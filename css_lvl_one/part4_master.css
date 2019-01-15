@@ -1,0 +1,13 @@
+li{
+  color: red;
+}
+
+
+/* Class tag call is higher in a hierarchy than a general tag call */
+.topitems{
+  color: blue;
+}
+
+#two{
+  border: 3px solid black;
+}
