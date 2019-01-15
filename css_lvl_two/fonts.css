@@ -1,0 +1,33 @@
+/* https://fontlibrary.org */
+h1{
+  font-family: "Arial";
+}
+
+p{
+  font-family: monospace;
+}
+
+/* Using px for size is not usually very common.
+The browser default is often 16 px
+1em = 16px
+2em = 32px
+Usually for the body element you select a font-size
+For the other elemets you want to assign, you usually use em */
+
+body{
+  font-size: 20px;
+}
+
+/* 2.0em - twice as large as 20px */
+#two{
+  font-size: 1.5em;
+}
+
+
+p{
+  font-family: 'Rufina', serif;
+}
+
+h1{
+  text-align: center;
+}
