@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DOM Interaction</title>
+  </head>
+  <body>
+    <h1 id="first">Important DOM attributes</h1>
+    <ul class="myul">
+      <li id='pickme'>document.URL - the actual URL of a page</li>
+      <li>document.body</li>
+      <li>document.head</li>
+      <li>document.links</li>
+    </ul>
+    <h1 id="second">Grabbing specific elems from the DOM</h1>
+    <ul class="myul">
+      <li>document.getElementById() (Usually it's a single element)</li>
+      <li>document.getElementByClassName() (.class)</li>
+      <li>document.getElementByTagName() (<tag>)</li>
+      <li><strong>document.querySelector()</strong> - returns the first obj matching the CSS style selector</li>
+      <li><strong>document.querySelectorAll()</strong> - returns a list of all matching selectors</li>
+    </ul>
+    <script src="dom_interaction.js" charset="utf-8"></script>
+  </body>
+</html>

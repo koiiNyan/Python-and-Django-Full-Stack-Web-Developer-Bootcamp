@@ -1,0 +1,11 @@
+td{
+  height: 160px;
+  width: 160px;
+  text-align: center;
+  border: 5px solid #6c757d;
+  font-size: 100px
+}
+
+.centered{
+  margin: auto;
+}
