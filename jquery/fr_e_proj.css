@@ -1,0 +1,13 @@
+/* Styling table cells */
+
+.board button{
+  width: 100px;
+  height: 100px;
+  background-color: rgb(128, 128, 128);
+  /* Space between cells*/
+  margin: 1px;
+  /* Making the cells circles*/
+  border-radius: 50%;
+  /* Making a border for smoother look */
+  border: 4px solid black;
+}
