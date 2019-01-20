@@ -78,11 +78,16 @@ print("~~~~~~~~~~~~~~~~~~~~")
 # end_other('abc', 'abXabc') → True
 
 #
-# def end_other(a, b):
-#   # CODE GOES HERE
+def end_other(a, b):
+   a = a.lower()
+   b = b.lower()
+   return a.endswith(b) or b.endswith(a)
 
 print("~~~~~~~~~~~~~~~~~~~~")
 print("PROBLEM THREE")
+print(end_other('Hiabc', 'abc'))
+print(end_other('AbC', 'HiaBc'))
+print(end_other('abc', 'abXabc'))
 print("~~~~~~~~~~~~~~~~~~~~")
 
 #####################
@@ -131,13 +136,23 @@ print("~~~~~~~~~~~~~~~~~~~~")
 # no_teen_sum(2, 13, 1) → 3
 # no_teen_sum(2, 1, 14) → 3
 
-# def no_teen_sum(a, b, c):
-#   # CODE GOES HERE
-# def fix_teen(n):
-#   # CODE GOES HERE
+def no_teen_sum(a, b, c):
+  return fix_teen(a) + fix_teen(b) + fix_teen(c)
+
+
+def fix_teen(n):
+  teen = [13, 14, 17, 18, 19]
+  if n in teen:
+      return 0
+  else:
+    return n
+
 
 print("~~~~~~~~~~~~~~~~~~~~")
 print("PROBLEM FIVE")
+print(no_teen_sum(1, 2, 3))
+print(no_teen_sum(2, 13, 1))
+print(no_teen_sum(2, 1, 14))
 print("~~~~~~~~~~~~~~~~~~~~")
 #####################
 ## -- PROBLEM 6 -- ##
