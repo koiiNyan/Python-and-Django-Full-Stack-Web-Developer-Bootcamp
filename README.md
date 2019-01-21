@@ -11,3 +11,4 @@ Notes & coursework
 - Tic Tac Toe Project : [page](/dom/game_proj.html), [css](/dom/game_proj.css), [js](/dom/game_proj.js)
 - Connect Four Project : [page](/jquery/fr_e_proj.html), [css](/jquery/fr_e_proj.css), [js](/jquery/fr_e_proj.js)
 - [Code Guesser Project](/python_lvl_one/game.py)
+- [War Card Game](/python_lvl_two/oop_proj.py)
