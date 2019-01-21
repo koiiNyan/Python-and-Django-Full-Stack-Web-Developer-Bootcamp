@@ -4,5 +4,6 @@ https://www.udemy.com/python-and-django-full-stack-web-developer-bootcamp
 Notes & coursework
 
 ### Projects
-- [Spectrum](/css_lvl_two/spectrum.html)
+CSS:
+- Spectrum:  [html](/css_lvl_two/spectrum.html), [css](/css_lvl_two/spectrum.css)
 - [Landing Page](/landing_page_proj)
