@@ -88,41 +88,28 @@ python manage.py startapp first_app
 ```
 
 13. Files in app:
-- __init.py__
-
+- __init.py__  
 Blank py script that due to its special name let's Python know that
 this directory can be treated as a package.
 
-
-- admin.py
-
+- admin.py  
 You can register your models here which Django will then use them with
 Django's admin interface.
 
-
-- apps.py
-
+- apps.py  
 Application specific configurations
 
-
-- models.py
-
+- models.py  
 Application's data models. It's where you specify the entities and
 relationships between the data.
 
-
-- tests.py
-
+- tests.py  
 Test functions to test code.
 
-
-- views.py
-
+- views.py  
 Functions that handle requests and return responses.
 
-
-- migrations (folder)
-
+- migrations (folder)  
 This dir stores DB specific info as it relates to the models.  
 
 **views.py** and **models.py** are two files you're going to be using for any given app.
