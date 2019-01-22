@@ -1,11 +1,15 @@
+# Creating a Dog class
 class Dog():
     # Class Object attribute for every instance of the class
     species = "mammal"
+    # Initialization
     def __init__(self,breed,name):
+        # Self refers to itself, being the actual class obj
         self.breed = breed
         self.name = name
 
 # myDog = Dog("Lab","Sammy")
+# Breed is an attribute and not a method so there're no parentheses.
 # print(myDog.breed)
 # print(myDog.name)
 # print(myDog.species)
