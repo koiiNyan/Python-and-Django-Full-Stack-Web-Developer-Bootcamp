@@ -34,33 +34,23 @@ django-admin startproject first_project
 ```
 
 8. Files in a proj:
-- __init.py__
-
+- __init.py__  
 Blank py script that due to its special name let's Python know that
 this directory can be treated as a package.
 
-
-- settings.py
-
+- settings.py  
 Project settings
 
-
-- urls.py
-
+- urls.py  
 Store all the URL patterns for the proj. (Basically: different pages of
 a web app) This particular file is going to make a lot of use of regex.
 
-
-- wsgi.py
-
+- wsgi.py  
 Acts as the Web Server Gateway Interface. It will later on help us deploy
 our web app to prod
 
-
-- manage.py
-
+- manage.py  
 Will use a lot.
-
 
 
 9. Running Local Server
