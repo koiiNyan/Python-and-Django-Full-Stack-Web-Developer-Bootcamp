@@ -108,8 +108,8 @@ views.py and models.py are two files you're going to be using for any given app.
 ### STEPS FOR Creating an app:
 1. Telling Django that we have an application.
 first_project \ settings.py
-We need to add our own application to **INSTALLED_APPS**
-![installed_apps](installed_apps.png)
+We need to add our own application to **INSTALLED_APPS**  
+![installed_apps](installed_apps.PNG)
 
 2. Creating a view
 first_app \ views.py
