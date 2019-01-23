@@ -1,4 +1,4 @@
-## Models
+# Models
 An essential part of any website is the **ability to accept information** from a user
 and **input it into a DB** and **retrieve information** from a DB and **use it to generate**
 content for the user.
@@ -21,7 +21,7 @@ class Topic(models.Model):
 
 
 class Webpage(models.Model):
-  category = models.ForeignKey(Topic)
+  category = models.ForeignKey(Topic, on_delete=models.DO_NOTHING)
   name = models.CharField(max_length=264)
   url = models.URLField()
 
@@ -32,12 +32,15 @@ class Webpage(models.Model):
   * migration:
   ```
   python manage.py migrate
-  ```
+  ```  
+  ![migration_operations](migration_operations.PNG)
   * register the changes to your app:
   ```
   python manage.py makemigrations app1
-  ```
-  * migrate db one more time
+  ```  
+  ![migrations](migrations.PNG)
+  * migrate db one more time  
+  ![migration_applying](migration_applying.PNG)
 
 - In order to use Admin interface with the models, we need to register them to our
 app's admin.py
@@ -57,3 +60,16 @@ admin.site.register(Model1)
 - After setting up the models, it's always a good idea to populate them with some
 test data
 - Library Faker + script  
+
+## Creating Models
+- first_app \ models.py
+- Creating a SQL DB (Migrating)
+- Confirming & Interacting with DB
+  * ```
+    python manage.py shell
+    ```
+
+  ![python_shell](python_shell.PNG)
+- Register models (first_app \ admin.py)
+- Create a superuser
+- http://127.0.0.1:8000/admin
