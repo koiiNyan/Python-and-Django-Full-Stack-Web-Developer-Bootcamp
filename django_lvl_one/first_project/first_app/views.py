@@ -6,4 +6,5 @@ from django.http import HttpResponse
 # Each view must return an HTTP Response Obj.
 
 def index(request):
-    return HttpResponse("Hello World")
+    my_dict = {'insert_me':"Now I'm coming from first_app/index.html ! "}
+    return render(request, 'first_app/index.html',context=my_dict)
