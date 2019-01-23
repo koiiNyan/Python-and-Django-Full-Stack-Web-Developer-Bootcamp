@@ -157,9 +157,26 @@ dictionary in the settings.py
 3. After it we can create an html file called index.html inside of the templates/first_app dir
 -   templates/first_app/index.html
 - Inside the html file we will insert template tags (Django Template Variable)
+  * {{ variable }}
 - Template variables will allow us to inject content into the HTML directly from Django ->  
   meaning we can later on use Python code to inject content from a database
 
 4. Using render() into index() (views.py)
 first_app \ views.py
 ![views_index](views_index.PNG)
+
+### STATIC FILES:
+1. Create a new dir inside of the proj called static
+2. Add directory path to settings.py
+3. Add a STATIC_URL variable
+![static](static.PNG)
+4. Add a directory inside of static called images
+5. To test if it works go to 127.0.0.1:8000/static/images/pict.jpg
+6. Inside html file, we add specific tags
+  * {% load staticfiles %}
+7. Inserting the image
+  * <img src={%static "images/pic.jpg" %} />
+  * **Note:** {{ }} used for simple text injection, {% %} for more complex inj and logic  
+  ( inside index.html )
+8. Linking css
+  * {% static "css/mystyle.css" %}
