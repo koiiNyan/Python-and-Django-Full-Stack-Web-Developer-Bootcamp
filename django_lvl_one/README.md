@@ -5,7 +5,7 @@ conda create --name myDjangoEnv django
 Downloads the latest django and applies it to the virtual environment
 (Or create with Anaconda Navigator)
 
-2. Activating:
+2. Activating: (**!!** IN CMD, not PowerShell for Win)
 ```
 activate myDjangoEnv
 ```
