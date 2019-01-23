@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 # Import views
 from first_app import views
@@ -23,4 +23,12 @@ urlpatterns = [
     # Grabbing index function from first_app\\views
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
+    path('first_app/', include('first_app.urls')),
 ]
+
+
+# path('first_app/', include('first_app.urls') allow us to look for any url
+# that has the pattern:
+# www.domainname.com/first_app/...
+# If we match that pattern, include() basically tells Django to go look at the
+# urls.py inside of first_app folder, NOT urls.py of the project
