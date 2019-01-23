@@ -106,7 +106,7 @@ This dir stores DB specific info as it relates to the models.
 
 
 
-### STEPS FOR Creating an app:
+## STEPS FOR Creating an app:
 1. Telling Django that we have an application.
 first_project \ settings.py
 We need to add our own application to **INSTALLED_APPS**   
@@ -119,4 +119,4 @@ first_app \ views.py
 first_project \ urls.py
 In order for us to see a view when we're running our server.
 
-#### URL MAPPING:
+### URL MAPPING:
