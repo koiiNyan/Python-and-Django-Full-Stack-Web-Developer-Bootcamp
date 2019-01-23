@@ -151,6 +151,8 @@ dictionary in the settings.py
 - **Before** we should make our project easily transferrable between computers  
   * We will be using Python's os module to dynamically generate the correct file
   path strings, regardless of computer  
+  ![templ](templ.PNG)  
+  ![templ_dir](templ_dir.PNG)
 
 3. After it we can create an html file called index.html inside of the templates/first_app dir
 -   templates/first_app/index.html
@@ -160,3 +162,4 @@ dictionary in the settings.py
 
 4. Using render() into index() (views.py)
 first_app \ views.py
+![views_index](views_index.PNG)
