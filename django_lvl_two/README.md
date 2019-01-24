@@ -87,3 +87,16 @@ test data
   python populate_first_app.py
   ```
 - Testing on website (in admin)
+
+
+## Models-Templates-Views Paradigm
+- "MTV" encompasses the idea of how to connect everything: models, templates, views.
+1. In the **views.py** (first_app) we import any models that we will need to use.
+2. Use the view to query the model for data that we will need.
+3. Pass results from the model to the template.
+4. Edit the template so that it is ready to accept and display the data from the model.
+5. Map a URL to the view.
+- We can practice this methodology by changing what we display on the front index page.
+- To practice we will generate a table first.
+- The table will display all the webpages and access records from the AccessRecord
+- We will use template tagging to connect the model to the html page.

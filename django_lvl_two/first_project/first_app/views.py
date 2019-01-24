@@ -5,6 +5,10 @@ from django.http import HttpResponse
 # Each view is going to have at least one argument.
 # Each view must return an HTTP Response Obj.
 
+
+# Connecting to DB
+from first_app.models import Topic, Webpage, AccessRecord
 def index(request):
-    my_dict = {'insert_me':"Now I'm coming from first_app/index.html ! "}
-    return render(request, 'first_app/index.html',context=my_dict)
+    webpages_list = AccessRecord.objects.order_by('date')
+    date_dict = {'access_records': webpages_list}
+    return render(request, 'first_app/index.html',context=date_dict)
