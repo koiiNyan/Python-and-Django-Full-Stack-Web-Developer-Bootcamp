@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>USERS</title>
+    <link rel="stylesheet" href="{% static "css/mystyle.css" %}">
+  </head>
+  <body>
+    <h1>USERS</h1>
+
+    <ol>
+      {% for user in users %}
+      <li> User Info
+        <ul>
+          <li>Fist Name: {{ user.firstName }}</li>
+          <li>Last Name: {{ user.lastName }}</li>
+          <li>Email: {{ user.email }}</li>
+        </ul>
+      </li>
+      {% endfor %}
+    </ol>
+
+  </body>
+</html>
