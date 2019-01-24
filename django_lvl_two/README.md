@@ -73,3 +73,17 @@ test data
 - Register models (first_app \ admin.py)
 - Create a superuser
 - http://127.0.0.1:8000/admin
+
+
+## Populating Models
+- Using the Faker library to populate our models with some "dummy" data
+- Be sure to activate virtual environment
+- ```
+  pip install Faker
+  ```
+- Create a population script on the top level (inside the first proj dir)
+- Run it
+- ```
+  python populate_first_app.py
+  ```
+- Testing on website (in admin)
