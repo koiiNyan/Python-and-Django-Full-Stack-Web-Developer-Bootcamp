@@ -1,4 +1,4 @@
-### Django Forms
+# Django Forms
 ## Pros:
 - Quickly generate HTML form widgets
 - Validate data and process it into a Python data structure
@@ -84,3 +84,21 @@ valid and if so, grab the data (need to edit views)
   * Add a check for empty fields
   * Add a check for a "bot"
   * Add a clean method for the entire form
+
+## MODEL FORMS
+- Accept form input and pass it to a model
+- Instead of inheriting from the forms.Forms class, we will use forms.ModelForm in **forms.py**
+- This helper class allows us to create a form from a pre-existing model
+- Add an inline class Meta, that provides information connecting the model to the form
+```
+from django import forms
+from myapp.models import MyModel
+
+class MyNewForm(forms.ModelForm):
+  class Meta:
+    model = MyModel
+    fields = "__all__"
+```
+  * fields = "__all__" - grabs all the fields from the model and grabs into the form
+  * exclude = ["field1", "field2"] - specify the fields to exclude
+  * fields = ("field1", "field2") - included fields
