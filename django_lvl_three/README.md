@@ -76,3 +76,11 @@ accidentally sending the data somewhere else.
 the user's local site page.
 - We need to inform the view that if we get a POST back, we should check if the data is
 valid and if so, grab the data (need to edit views)
+
+## FORM VALIDATION
+- We can use **hidden fields** for custom field validation.
+  * app/forms.py
+- Validate user misbehavior or bots.
+  * Add a check for empty fields
+  * Add a check for a "bot"
+  * Add a clean method for the entire form
