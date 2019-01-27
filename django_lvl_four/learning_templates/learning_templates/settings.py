@@ -64,6 +64,10 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
+        'libraries':{
+                'my_extras': 'basic_app.template_tags.my_extras',
+
+            },
         },
     },
 ]

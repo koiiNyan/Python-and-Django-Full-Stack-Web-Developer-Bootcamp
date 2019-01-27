@@ -13,3 +13,15 @@
   * Create a base template of them
   * Set the tags in the base template
   * Extend and call those tags anywhere
+
+### Template Filters and Custom Filters
+- Help making edits to the information from model before injecting it (string operations, arithmetic, etc.)
+- The general form for a template filter is:  
+{{ value | filter:"parameter"}}
+- Not all filters take in parameters
+- Many of these filters are based off of common built-in Python functions (docs)
+- When we create your own filter, at the top of your template/html file, you need to add a load call:
+  * {% load my_extras %}
+  * add template to libraries inside settings:
+    * ![temp](temp.PNG)
+    * ![index](index.PNG)
