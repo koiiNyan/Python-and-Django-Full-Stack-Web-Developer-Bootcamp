@@ -20,7 +20,7 @@
   ```
 
 - **NOTE!!**
-  * * args - arguments  
+  *  * args - arguments  
   * gives all function parameters as a tuple
   * basically it's a way that you can prepare the function to accept more than one argument:  
   ```
@@ -48,3 +48,8 @@
   # name one
   # age 27
   ```
+
+## Detail View and List View
+- Often when we have models, we want to either list the records from the model, or show details of a single record.
+- Django has some generic view classes you can inherit from your model
+- It is common practice to have a **template** folder inside the app's folder
