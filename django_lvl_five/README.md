@@ -50,3 +50,13 @@
 - Sometimes we will want to save that information directly to the database
 - Other times, we will set *comit=False* so we can manipulate the data before saving it to database
 - This helps prevent collision errors of saving the data twice
+
+
+## LOGIN
+- Once the user is registered, we want to make sure that they can log in and out of the site.
+- This process involves:
+  * Setting up the login views
+  * Using built-in decorators for access
+  * Adding the LOGIN_URL in settings
+  * Creating the login.html
+  * Editing the urls.py files
