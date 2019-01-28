@@ -22,6 +22,31 @@
 - Sometimes users will also try to use a very weak password
 - We can also add in validator options to prevent a user from doing that
 
-## STATIC vs MEDIA folders
-- Static is stuff that belong to you as a website creator administrator
-- Media is stuff that more or less belong to users 
+## User Authorization Models
+- The User object has a few key features:
+  * Username
+  * Email
+  * Password
+  * First Name
+  * Surname
+- Other User object attributes: is_active, is_staff, is_superuser
+- Sometimes you will also want to add more attributes to a user, such as their own links or a profile image
+- You can do this in your app's **models.py** by creating another class that has a relationship to the **User** class.
+- **Image Field** allows to store images to a model, typically we will keep any user uploaded content like this in the media file.
+- In order to work with images with Python we will need to install the Python Image Library:
+  * pip install pillow
+- After creating the model you need to register it in the admin.py:
+  * admin.site.register(UserProfileInfo)
+- Next we will want to implement a Django form that the User can use to work with the website
+
+### STATIC vs MEDIA folders
+  - Static is stuff that belong to you as a website creator administrator
+  - Media is stuff that more or less belong to users
+  - Define static and media paths inside settings
+
+## Registration
+- A lot of the coding for working with Users and Authorization happens in the **views.py**
+- The basic idea is that we check if there is a **POST** request and then perform some sort of action based off that information
+- Sometimes we will want to save that information directly to the database
+- Other times, we will set *comit=False* so we can manipulate the data before saving it to database
+- This helps prevent collision errors of saving the data twice
