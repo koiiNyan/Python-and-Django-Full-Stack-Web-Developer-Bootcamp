@@ -53,3 +53,9 @@
 - Often when we have models, we want to either list the records from the model, or show details of a single record.
 - Django has some generic view classes you can inherit from your model
 - It is common practice to have a **template** folder inside the app's folder
+
+## CRUD
+- **C** reate **R** etrieve **U** pdate **D** elete
+- CRUD is inherit to almost every website
+- Whenever you work with models and databases you'll need to perform those four basic actions
+- For CreateView we need to specify fields allowed for users to create
