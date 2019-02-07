@@ -12,3 +12,4 @@ Notes & coursework
 - Connect Four Project : [page](/jquery/fr_e_proj.html), [css](/jquery/fr_e_proj.css), [js](/jquery/fr_e_proj.js)
 - [Code Guesser Project](/python_lvl_one/game.py)
 - [War Card Game](/python_lvl_two/oop_proj.py)
+- [Company Blog](/blog_proj)
