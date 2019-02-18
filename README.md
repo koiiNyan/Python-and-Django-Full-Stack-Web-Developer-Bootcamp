@@ -13,3 +13,4 @@ Notes & coursework
 - [Code Guesser Project](/python_lvl_one/game.py)
 - [War Card Game](/python_lvl_two/oop_proj.py)
 - [Company Blog](/blog_proj)
+- [Social Media With Groups](/soc_proj)
